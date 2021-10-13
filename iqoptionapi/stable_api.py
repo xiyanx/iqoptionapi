@@ -83,7 +83,7 @@ class IQ_Option:
             # logging.error('**warning** self.api.close() fail')
 
         self.api = IQOptionAPI(
-            "iqoption.com", self.email, self.password)
+            "iqtrading.asia", self.email, self.password)
         check = None
         self.api.set_session(headers=self.SESSION_HEADER, cookies=self.SESSION_COOKIE)
         check, reason = self.api.connect()
